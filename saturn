@@ -1,18 +1,19 @@
-# Сессионный проект по Машинному Обучению
-**Тема:** Классификация пульсаров по радиочастотным характеристикам
-**Выполнила:** Куресбай Акбота
+Machine Learning Term Project
+Topic: Pulsar Star Classification based on Radio Frequency Characteristics
+Developed by: Akbota Kuresbay
 
-## О проекте
-Цель работы — разработка системы классификации космических объектов (пульсаров) с использованием алгоритмов машинного обучения, реализованных "с нуля".
+Project Overview
+The goal of this project is to develop a classification system for cosmic objects (pulsars) using machine learning algorithms implemented "from scratch." 
+This project demonstrates the fundamental mechanics of gradient descent and statistical modeling applied to real-world astronomical data.
 
-### Используемый датасет
-В работе используется набор данных **Predicting a Pulsar Star** ([источник Kaggle](https://www.kaggle.com/datasets/pavanraj159/predicting-a-pulsar-star)).
-- **Размер:** 17,898 строк (соответствует требованиям >2000).
-- **Признаки:** 8 числовых параметров радиопрофиля пульсара.
-- **Задача:** Бинарная классификация (пульсар / шум).
+Dataset Description
+I use the Predicting a Pulsar Star dataset (Source: https://www.kaggle.com/datasets/colearninglounge/predicting-pulsar-starintermediate).
+Dataset Size: 17,898 samples (meets the >2000 rows requirement).
+Features: 8 numerical characteristics of the pulsar's integrated radio profile and DM-SNR curve.
+Task: Binary Classification (Class 1: Pulsar / Class 0: RFI - Radio Frequency Interference/Noise).
 
-### Реализованные задачи
-1. **Линейная регрессия:** Реализация градиентного спуска на NumPy.
-2. **Логистическая регрессия:** Реализация сигмоиды и обучения с нуля.
-3. **Сравнение моделей:** Логистическая регрессия vs Random Forest (sklearn).
-4. **Визуализация:** Интерактивные графики в Google Colab.
+Key Tasks & Implementation
+Linear Regression: Manual implementation of Gradient Descent using NumPy to explore feature correlations.
+Logistic Regression: Built from scratch, including the implementation of the Sigmoid function and the Log-Loss cost function.
+Model Comparison: Performance analysis between our manual Logistic Regression and a library-based Decision Tree (Scikit-learn).
+Interactive Visualization: Interactive dashboards in Google Colab using widgets to demonstrate the effect of hyperparameters like Learning Rate.
